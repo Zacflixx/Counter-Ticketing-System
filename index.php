@@ -28,7 +28,8 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
         }
         html,body{
             height:100%;
-            width:100%;
+            width:100%;            background-color: #9dc4f1 !important;
+
         }
         main{
             height:100%;
@@ -126,7 +127,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient" id="topNavBar">
         <div class="container">
             <a class="navbar-brand" href="./">
-            Queuing
+            QuickDesk Queuing System &nbsp;&nbsp;&nbsp;&nbsp;
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -136,11 +137,9 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
                     <li class="nav-item">
                         <a class="nav-link <?php echo ($page == 'home')? 'active' : '' ?>" aria-current="page" href="./">Home</a>
                     </li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link <?php echo ($page == 'users')? 'active' : '' ?>" aria-current="page" href="./?page=users">Users</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./?page=cashiers">Cashier List</a>
+                        <a class="nav-link" href="./?page=cashiers">Counters List</a>
                     </li>
                     
                 </ul>

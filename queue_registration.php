@@ -31,6 +31,8 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
         body {
             height: 100%;
             width: 100%;
+            background-color: #9dc4f1 !important;
+
         }
 
         .form-control.border-0 {
@@ -69,11 +71,11 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
                 <div style="display: flex; flex:100%" style="height: 20rem !important;">
                     <div style=" flex:50%">
                         <div class="row justify-content-center">
-                            <div class="col-md-7">
+                            <div class="col-md-7s" style=" padding-right: 2rem !important; "  >
 
                                 <div class="card rouded-0 shadow">
                                     <div class="card-header rounded-0">
-                                        <div class="h5 card-title">Get your Queue Number Here.</div>
+                                        <div class="h5 card-title"> Get ticket here.</div>
                                     </div>
                                     <div class="card-body rounded-0">
                                         <form action="" id="queue-form">
@@ -82,7 +84,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
                                                 <input type="text" id="customer_name" name="customer_name" autofocus autocomplete="off" class="form-control form-control-lg rounded-0 border-0 border-bottom" required>
                                             </div>
                                             <div class="form-group text-center my-2">
-                                                <button class="btn-primary btn-lg btn col-sm-4 rounded-0" style="width: 9rem;" type='submit'>Get Queue</button>
+                                                <button class="btn-primary btn-lg btn col-sm-4 rounded-0" style="width: 11rem;" type='submit'>Generate Ticket</button>
                                             </div>
                                         </form>
                                     </div>

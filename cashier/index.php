@@ -31,7 +31,8 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
         }
         html,body{
             height:100%;
-            width:100%;
+            width:100%;            background-color: #9dc4f1 !important;
+
         }
         main{
             height:100%;
